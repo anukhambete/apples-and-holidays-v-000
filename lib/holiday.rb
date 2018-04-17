@@ -66,6 +66,13 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   holiday_hash.each do |season,data|
     data.each do |holiday,supply|
+      supply.each do |single_supply|
+        if single_supply == "BBQ"
+          holiday
+        end
+      end
+    end
+  end.flatten
 end
 
 
