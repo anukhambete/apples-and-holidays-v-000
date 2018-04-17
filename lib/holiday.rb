@@ -62,7 +62,7 @@ holiday_hash.each do |season,data|
   puts "#{season.capitalize}:"
   data.each do |holiday,supplies|
     hol = holiday.to_s
-    holsplit = hol.split()
+    holsplit = hol.split('_')
     puts "  #{holiday}: #{supplies.join(", ")}"
   end
 end
