@@ -66,8 +66,11 @@ holiday_hash.each do |season,data|
     holsplit = []
     holsplit = hol.split('_')
     arr_cap = []
-    holsplit.each do |word|
-      arr_cap << word.capitalize
+    
+        holsplit.each do |word|
+          arr_cap << word.capitalize
+        end
+        
     puts "  #{holiday}: #{supplies.join(", ")}"
   end
 end
