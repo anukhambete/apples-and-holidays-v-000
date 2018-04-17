@@ -71,7 +71,8 @@ holiday_hash.each do |season,data|
           arr_cap << word.capitalize
         end
         holiday_modified = arr_cap.join(" ")
-    puts "  #{holiday}: #{supplies.join(", ")}"
+        
+        puts "  #{holiday_modified}: #{supplies.join(", ")}"
   end
 end
 end
