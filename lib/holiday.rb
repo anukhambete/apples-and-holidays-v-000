@@ -60,9 +60,14 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
 holiday_hash.each do |season,data|
   puts "#{season.capitalize}:"
+  
   data.each do |holiday,supplies|
     hol = holiday.to_s
+    holsplit = []
     holsplit = hol.split('_')
+    arr_cap = []
+    holsplit.each do |word|
+      arr_cap << word.capitalize
     puts "  #{holiday}: #{supplies.join(", ")}"
   end
 end
